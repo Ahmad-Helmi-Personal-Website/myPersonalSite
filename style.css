@@ -1,0 +1,70 @@
+html {
+    font-family: sans-serif;
+    
+    background: rgb(145, 231, 149);
+}
+
+.hdr {
+    
+    background-color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    display: flex;
+    padding: 10px 20px 10px 20px;
+    margin: 30px;
+    position: fixed;
+    flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 12cm;
+}
+
+.menu{
+    border: 1px solid black;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	gap: 15mm;
+    padding-top: 25px;
+    font-size: 50px;
+    display: flex;
+    margin-right: 50px;
+
+    
+}
+
+main{
+    
+    min-height: 180mm;
+}
+
+footer{
+    
+    background-color: bisque;
+    display: block;
+    position: fixed;
+    size: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    height: 64px;
+    padding: 16px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px -2px black;
+}
+
+
+/* {
+    box-sizing: border-box;
+}
+user agent stylesheet
+html {
+    display: block;
+    view-transition-name: root;
+}
+*/
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 100px;
+}
