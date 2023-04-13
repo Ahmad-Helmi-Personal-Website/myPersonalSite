@@ -1,6 +1,6 @@
 html {
     font-family: Tahoma;
-    
+    position: absolute;
     background: rgb(241, 237, 156);
 }
 .upSpace{
@@ -100,26 +100,28 @@ input[type="text"]:hover {
 }
 
 #form{
-    
+    position: relative;
     border: 1px solid gray;
     display: flex;
     flex-direction: column;
-    width: 80%;
-    align-items: center;
+    width: 100%;
+    align-items: left;
+    /*margin: 2%;*/
+    box-sizing: border-box;
 }
 
 .name{
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 25%;
     justify-content: flex-start;
-    align-items: center;
+    align-items: left;
 }
 
 
 
 textarea {
-    width: 100%;
+    width: 90%;
     height: 100px;
     border: 1px solid black;
     margin: 10px;
@@ -130,14 +132,17 @@ textarea {
 #message{
     justify-content: first baseline;
     min-height: 150px;
-    width: 360px;
+    width: 70%;
     border: 2px solid black;
 
 }
 
 #email{
-    align-self: center;
-    width: 360px;
+    width: 50%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
 }
 
 button {
@@ -151,3 +156,14 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+@media only screen and (max-width: 768px) {
+    /* styles applied when screen width is 768px or less */
+    #form,
+    main {
+        width: 90%;
+        margin: auto;
+        font-size: 12px;
+        grid-template-columns: 1fr;
+    }
+    }
